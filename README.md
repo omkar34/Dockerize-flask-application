@@ -8,7 +8,7 @@ Clone the repository
 
 ```bash
 git clone https://github.com/omkar34/Dockerize-flask-application.git
-cd Dockerize-flask-app
+cd Dockerize-flask-application
 ```
 
 Build docker image

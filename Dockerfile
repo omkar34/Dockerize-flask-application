@@ -1,11 +1,9 @@
-FROM python:3.6.4-slim-jessie
-
-RUN pip3 install --upgrade pip
+FROM python:alpine
 
 WORKDIR /app
 COPY . /app
 
-RUN pip3 --no-cache-dir install -r requirements.txt
+RUN pip install --upgrade pip && pip --no-cache-dir install -r requirements.txt
 
 EXPOSE 5000
 
